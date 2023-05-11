@@ -90,13 +90,13 @@ INSERT INTO `customers` (`CustomerId`, `FullName`, `Email`, `ContactNumber`) VAL
 (88, 'Christian Yeld', 'christian.yeld@customer.com', '69-624-5454'),
 (89, 'Delilah Ayerst', 'delilah.ayerst@customer.com', '90-389-3298');
 
-INSERT INTO `menuitems` (`MenuItemsId`, `CourseName`, `StarterName`, `DessertName`, `type`) VALUES
-(1, 'Pizza', 'Minestrone', 'Cheesecake', 'Italian'), --Margherita
-(2, 'Kabasa', 'Falafel', 'Turkish yoghurt', 'Turkish'), -- Manti
-(3, 'Greek salad', 'Hummus', 'Greek yoghurt', 'Greek'),  --Moussaka 
-(4, 'Bean soup', 'Hummus', 'Ice cream', 'Greek'), --Fasolada
-(5, 'Carbonara', 'Olives', 'Affogato', 'Italian'), --Primo
-(6, 'Shawarma', 'Flatbread', 'Baklava', 'Turkish'); -- Doner kebab
+INSERT INTO `menuitems` (`MenuItemsId`, `CourseName`, `StarterName`, `DessertName`) VALUES
+(1, 'Pizza', 'Minestrone', 'Cheesecake'), 
+(2, 'Kabasa', 'Falafel', 'Turkish yoghurt'), 
+(3, 'Greek salad', 'Hummus', 'Greek yoghurt'),  
+(4, 'Bean soup', 'Hummus', 'Ice cream'), 
+(5, 'Carbonara', 'Olives', 'Affogato'), 
+(6, 'Shawarma', 'Flatbread', 'Baklava'); 
 
 
 
@@ -120,10 +120,11 @@ VALUES
 ('John Millar','Receptionist','351584508','John.m@littlelemon.com','$35,000');
 
 
-INSERT INTO Orders (OrderID, OrderDate, TableNo, MenuID, BookingID, Quantity, TotalCost)
+INSERT INTO Orders (OrderID, OrderDate,  MenuID, CustomerId, Quantity, TotalCost)
 VALUES
-(1, '2023-01-01', 12, 1, 1, 2, 86),
-(2, '2023-01-01', 19, 2, 2, 1, 37),
-(3,'2023-01-01', 15, 2, 3, 1, 37),
-(4, '2023-01-01', 5, 3, 4, 1, 200),
-(5, '2023-01-01', 8, 1, 5, 1, 155);
+(1, '2023-01-01',  1, 1, 1,  86),
+(2, '2023-01-01',  2, 2, 2,  37),
+(3,'2023-01-01',  2, 3, 3,  37),
+(4, '2023-01-01',  3, 4,  4,  200),
+(5, '2023-01-01',  1, 5, 5,  155);
+
