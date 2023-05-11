@@ -2,11 +2,12 @@
 
 by johnguaz
 
-## Week 2 see [Notebook for stored procedures and queries](Database_Engineer_Capstone.ipynb)
+## Week 2 see [Notebook for stored procedures and queries](Database_Engineer_Capstone.ipynb) or you can run [sql script for stored procedures](stored_procs.sql)
 - ![LittleLemonDM](LittleLemonDM.png)
 - [LittleLemonDB.sql](LittleLemonDB.sql)
 - [Data inserted for db](data.sql)
 - [Notebook for stored procedures and queries](Database_Engineer_Capstone.ipynb)
+- [sql script for stored procedures](stored_procs.sql)
 
 
 ## Week 3
